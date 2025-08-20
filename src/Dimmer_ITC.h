@@ -41,7 +41,6 @@
 
 #include <Arduino.h>
 
-// Make it config somehow (TODO)
 #define FREQ_VAR 0.4 //Hz
 #define DEBOUNCE ((1E+6 / 50) / 2) //µs
 
