@@ -78,10 +78,10 @@ class Dimmer_ITC
         bool calibrate();
 
         void setLevel(uint8_t level);
+        bool setCalibration(uint32_t calibration);
 
         uint8_t getLevel() const { return _level; }
         float getFrequency() const { return _frequency; }
-
         uint32_t getCalibration() const { return _calibration;}
         
 };

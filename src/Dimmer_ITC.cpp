@@ -172,6 +172,20 @@ void Dimmer_ITC::setLevel(uint8_t level)
 
 
 /*
+    \brief Set zero-cross detection calibration value
+    \param Time between zero-cross and detection edge in µs
+    \return Calibration value validity
+*/
+bool Dimmer_ITC::setCalibration(uint32_t calibration) 
+{       
+        if(calibration == 0) return false;
+        if(calibration >= (1E+6 / 2) / 60) return false;
+        _calibration = calibration;
+        return true;
+}
+
+
+/*
         \brief Calculate activation angle corresponding to the power level
         \param Power level [0, 1.0]
 */
