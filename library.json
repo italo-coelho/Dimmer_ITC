@@ -1,0 +1,30 @@
+{
+    "name": "Dimmer_ITC",
+    "version": "1.0.0",
+    "description": "A library to control AC Loads with Linear Response, includes Automatic Zero-Cross Delay Calibration.",
+    "keywords": "Dimmer, AC Load, Triac",
+    "repository":
+    {
+      "type": "git",
+      "url": "https://github.com/italo-coelho/Dimmer_ITC.git"
+    },
+    "authors":
+    [
+      {
+        "name": "Ítalo Coelho",
+        "email": "italo.code@proton.me",
+        "url": "https://github.com/italo-coelho",
+        "maintainer": true
+      }
+    ],
+    "frameworks": "arduino",
+    "platforms": 
+    [
+        "espressif32", 
+        "espressif8266"
+    ],
+    "dependencies": 
+    [
+      
+    ]
+  }
