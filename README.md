@@ -29,4 +29,4 @@ This library provides a method to calibrate the zero-cross detection circuit. Th
 
 - Example code is currently not available but all methods and parameters have briefs.
 
-- It is known to work with ESP32 and ESP8266 microcontrollers. If you can successfully use a different one, please let me know!
+- It is known to work with ESP8266 microcontrollers (ESP32 support in progress). If you can successfully use a different one, please let me know!
