@@ -253,12 +253,13 @@ void Dimmer_ITC::breathe()
 void IRAM_ATTR Dimmer_ITC::onZeroCrossISR() 
 {
         uint64_t now = time();
-        if(now - _then >= DEBOUNCE) 
-        {
-                timer1_write((_offTime - _calibration) * 5);
-                _frequency = 1E+6 / (now - _then);
-                _then = now;
-        }
+        
+        if(now - _then < DEBOUNCE) return;
+
+        _frequency = 1E+6 / (now - _then);
+        _then = now;
+
+        timer1_write((_offTime - _calibration) * 5);
 }
 
 
